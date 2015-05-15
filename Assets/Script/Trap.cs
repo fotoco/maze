@@ -10,15 +10,15 @@ public class Trap : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	    
+		
 	}
 
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Ball")
-        {
-            GameObject respawn = GameObject.FindWithTag("Respawn");
-            other.gameObject.transform.position = respawn.transform.position;
-        }
-    }
+	void OnTriggerEnter(Collider other)
+	{
+		if (other.gameObject.tag == "Ball")
+		{
+			GameObject respawn = GameObject.FindWithTag("Respawn");
+			other.gameObject.transform.position = respawn.transform.position;
+		}
+	}
 }
